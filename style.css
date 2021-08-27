@@ -1,0 +1,161 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.heading {
+    padding: 4;
+    margin: 1.5;
+    width: 99%;
+    animation-name: fade-in-bottom-left;
+    animation-duration: 7s;
+    border: 2px solid black;
+    text-align: left;
+    box-shadow: 5px 5px 2px grey;
+}
+
+@keyframes fade-in-bottom-left {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+.heading h2 {
+    display: inline;
+    margin-right: 5px;
+    margin-left: 25px;
+    letter-spacing: 0.5ch;
+}
+
+
+#instructions {
+    float: right;
+    margin-right: 20px;
+    color: black;
+    box-shadow: 5px 5px 2px grey;
+    font-weight: bolder;
+    letter-spacing: 0.5ch;
+    margin-bottom: 3px;
+}
+
+
+.modal-header h3 {
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+
+
+.modal-body h4 {
+    color: red;
+    font-weight: bolder;
+}
+
+
+.modal-body {
+    background-color: aquamarine;
+    border-radius: 15px;
+}
+
+
+.modal-header {
+    background-color: rgb(255, 115, 0);
+    border-radius: 15px;
+}
+
+
+.gameplay {
+    animation-name: gameplay-move;
+    animation-duration: 7s;
+    font-weight: bolder;
+    color: whitesmoke;
+    box-shadow: 5px 5px 2px grey;
+    letter-spacing: 0.4ch;
+}
+
+@keyframes gameplay-move {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+#status {
+    animation-name: gameplay-move2;
+    animation-duration: 7s;
+    font-weight: bolder;
+    box-shadow: 5px 5px 2px grey;
+    letter-spacing: 0.4ch;
+}
+
+@keyframes gameplay-move2 {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+
+#footer {
+    background-color: rgb(168, 168, 168);
+    line-height: 2;
+    bottom: 0;
+    color: black;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    animation-name: footer;
+    animation-duration: 7s;
+}
+
+@keyframes footer {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#restart {
+    float: left;
+    bottom: 50;
+    color: whitesmoke;
+    margin: 0px;
+    box-shadow: 5px 5px 2px grey;
+    margin-left: -260px;
+    width: 40%;
+    font-weight: bolder;
+    letter-spacing: 0.3ch;
+    animation-name: footer;
+    animation-duration: 7s;
+    position: absolute;
+}
+
+canvas {
+    border: 2px dashed red;
+
+}
